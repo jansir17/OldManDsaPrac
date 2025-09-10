@@ -12,6 +12,7 @@ public class Switch {
                 break;
             case "Apple":
                 System.out.println("You like Apple");
+                System.out.println("You like Apple2");
                 break;
             default:
                 System.out.println("you are not a fruit guy");
