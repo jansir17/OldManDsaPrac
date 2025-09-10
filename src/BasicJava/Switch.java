@@ -6,7 +6,7 @@ public class Switch {
         Scanner sc = new Scanner(System.in);
         String fruit = sc.nextLine();
 
-        switch (fruit){
+        switch (fruit) {
             case "Mango":
                 System.out.println("You like Mango");
                 break;
@@ -15,6 +15,7 @@ public class Switch {
                 break;
             default:
                 System.out.println("you are not a fruit guy");
+                break;
         }
     }
 }
