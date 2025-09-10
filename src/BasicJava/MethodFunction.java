@@ -9,6 +9,8 @@ public class MethodFunction {
     }
 
     static void changeName(String nameName) {
+        System.out.println(nameName);
         nameName = "Rokon";
+        System.out.println(nameName);
     }
 }
