@@ -5,8 +5,20 @@ public class ArrayDeclaration {
         int[] array01 = new int[5]; //Declaration + Initialization
         int[] array02;              // Declaration ONLY
         array02 = new int[5];       // Initialization Only by Mentioning size
-        int[] array03 = {01, 02, 03}; // Declaring Array with value in it.
-        System.out.println(array03[2]);
+        int[] array03 = {4, 1777, 15, 199, 999999 , 5, 1000}; // Declaring Array with value in it
+
+        whatIsMaxValue(array03);
+    }
+
+    static void whatIsMaxValue(int[] arr){
+        int max = arr[0];
+        for(int i = 1; i<arr.length;i++)
+        {
+            if(arr[i]>max){
+                max = arr[i];
+            }
+        }
+        System.out.println("Big Number is "+ max);
     }
 }
 
