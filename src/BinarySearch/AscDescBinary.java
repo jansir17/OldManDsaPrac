@@ -25,7 +25,7 @@ public class AscDescBinary {
                 if (targetValue > arr[mid]) {
                     end = mid - 1;
                 } else
-                    start = mid + 1;
+                    start = mid + 1;    
             }
         }
         return -1;
