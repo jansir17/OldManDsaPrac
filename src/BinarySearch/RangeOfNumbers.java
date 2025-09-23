@@ -5,11 +5,12 @@ import java.util.Arrays;
 public class RangeOfNumbers {
     public static void main(String[] args) {
         int[] arr01 = {1, 2, 3, 4, 5, 6,6,6,6,6,7,7,7,8,8,8,9,10,10};
-        int targetValue = 10;
-
-        int index1 = searchingRange(arr01, targetValue, true);
-        int index2 = searchingRange(arr01, targetValue, false);
-        int[] ans = {index1, index2};
+        int targetValue = 9;
+        int[] ans = {-1, -1};
+        ans[0]= searchingRange(arr01, targetValue, true);
+        if(ans[0] != -1){
+            ans[1]= searchingRange(arr01, targetValue, false);
+        }
         System.out.println(Arrays.toString(ans));
     }
 
